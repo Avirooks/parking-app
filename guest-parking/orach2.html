@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>שריון חניית אורח 2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>שריון חניית אורח 2</h1>
+  <div class="container">
+    <div class="form-section">
+      <h2>פרטי שריון</h2>
+      <form>
+        <label for="name">שם מלא</label>
+        <input type="text" id="name" required>
+
+        <label for="building">מס' בניין</label>
+        <select id="building" required>
+          <option value="">בחר...</option>
+          <option value="87">87</option>
+          <option value="85">85</option>
+          <option value="55">55</option>
+        </select>
+
+        <label for="apartment">מס' דירה</label>
+        <input type="text" id="apartment" required>
+
+        <label for="phone">טלפון</label>
+        <input type="tel" id="phone" pattern="\d{9,10}" required>
+
+        <label for="from">שעת התחלה</label>
+        <input type="datetime-local" id="from" required>
+
+        <label for="to">שעת סיום</label>
+        <input type="datetime-local" id="to" required>
+
+        <button type="submit">שלח</button>
+      </form>
+    </div>
+    <div class="card-preview">
+      <h2>אורח 2</h2>
+      <p>פנוי לשריון</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

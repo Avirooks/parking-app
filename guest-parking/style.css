@@ -1,0 +1,162 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    direction: rtl;
+    padding: 20px;
+    background: #f8f9fa;
+    color: #333;
+  }
+  
+  .container {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .form-section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  .form-section h2 {
+    margin-top: 0;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .card-preview {
+    flex: 1;
+    background: #e8f5e9;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    padding: 20px;
+    min-height: 250px;
+  }
+  
+  .parking-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card.guest {
+    border: 2px solid #28a745;
+    background: #d4edda;
+  }
+  
+  .card.guest.occupied {
+    background-color: #f8d7da;
+    border-color: #dc3545;
+  }
+  
+  .card.assigned {
+    background-color: #fff3cd;
+    border: 2px solid #ffc107;
+  }
+  
+  .card p {
+    font-size: 14px;
+    line-height: 1.4;
+    word-break: break-word;
+  }
+  
+  @media (max-width: 768px) {
+    .parking-list {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+  
+    .container {
+      flex-direction: column;
+    }
+  
+    .form-section {
+      max-width: 100%;
+    }
+  }
+  @media (prefers-color-scheme: dark) {
+  body {
+    background: #121212;
+    color: #e0e0e0;
+  }
+
+  .form-section,
+  .card,
+  .card-preview {
+    background: #1e1e1e;
+    color: #fff;
+    border-color: #444;
+  }
+
+  input, select {
+    background: #2a2a2a;
+    color: #fff;
+    border: 1px solid #555;
+  }
+
+  .card.guest {
+    background: #204d3d;
+    border-color: #28a745;
+  }
+
+  .card.guest.occupied {
+    background-color: #5f1d1d;
+    border-color: #dc3545;
+  }
+
+  .card.assigned {
+    background-color: #4e3b15;
+    border-color: #ffc107;
+  }
+}
+h2 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    background-color: #e3f2fd;
+    padding: 10px 15px;
+    border-right: 6px solid #2196f3;
+    border-radius: 5px;
+    color: #0d47a1;
+  }
+  
